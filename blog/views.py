@@ -12,3 +12,8 @@ def home(request):
     ])
 
     return HttpResponse(output)
+
+def walli(request):
+    return render(request, 'walli.html', {
+        'home': _("Home"),  # Transltors: Built-in in Django
+    })
