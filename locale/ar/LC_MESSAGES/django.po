@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-03-24 19:49+0000\n"
+"PO-Revision-Date: 2016-03-24 21:51+0200\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.4\n"
+
+#. Translators: Provided by Django
+#. Translators: New string in our site
+#: blog/templates/walli.html:7 blog/views.py:11 blog/views.py:18
+msgid "Home"
+msgstr " بيتنا الزين"
+
+#. Translators: Added by us
+#: blog/templates/walli.html:11
+msgid "Omar and Mohammed in reverse."
+msgstr "محمد وعمر"
+
+#: blog/views.py:8
+msgid "Welcome to my site."
+msgstr "يا مية هلا"
+
+#. Translators: New string in our site
+#: blog/views.py:9
+msgid "Arabic"
+msgstr "عربي جا بوية عربي"
+
+#: blog/views.py:10
+msgid "Django"
+msgstr "جَنقو"
