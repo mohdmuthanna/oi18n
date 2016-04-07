@@ -42,14 +42,15 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'solid_i18n',
     'blog',
 )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'oi18n.middlewares.ForceDefaultLanguageMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
+    # 'django.middleware.locale.LocaleMiddleware',
+    'solid_i18n.middleware.SolidLocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -90,11 +91,17 @@ DATABASES = {
     }
 }
 
+LANGUAGE_CODE = 'ar'
+
+LANGUAGES = (
+    ('ar', 'Arabic'),
+    ('en', 'English'),
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'ar'
+SOLID_I18N_DEFAULT_PREFIX_REDIRECT = True
 
 TIME_ZONE = 'UTC'
 
